@@ -1,0 +1,39 @@
+<div class="mycontainer">
+  <div class="innercontainer">
+  <div class="text col-md-2">
+    <h2>Deals of the Day</h2>
+    <button type="button" class="btn btn-primary">View All</button>
+  </div>
+  <div class="col-md-8">
+  <div class="carousel slide" id="electronicsCarousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          <div class="col-xs-3 imgcontainer" *ngFor = "let item of img_urls">
+            <a href="#"><img src="{{item.src}}" class="img-responsive-electronics"></a>
+            <p class="name-electronics">{{item.name}}</p>
+            <p class="price-electronics">{{item.price}}</p>
+            <p class="details-electronics">{{item.details}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <div class="col-xs-3 imgcontainer" *ngFor = "let item of img_urls">
+            <a href="#"><img src="{{item.src}}" class="img-responsive-electronics"></a>
+            <p class="name-electronics">{{item.name}}</p>
+            <p class="price-electronics">{{item.price}}</p>
+            <p class="details-electronics">{{item.details}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#electronicsCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#electronicsCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-2">
+    <a href="#"><img class="ad" src="https://rukminim1.flixcart.com/flap/464/708/image/d85fd8.jpg?q=70" alt=""></a>
+  </div>
+  </div>
